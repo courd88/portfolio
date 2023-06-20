@@ -42,11 +42,11 @@
 
 ## **🛠 기술 및 도구**
 
-![JAVA]([https://img.shields.io/badge/Firebase-%23039BE5.svg?style=flat-square&logo=firebase](https://www.oracle.com/kr/java/))
-![spring]([[https://img.shields.io/badge/Firebase-%23039BE5.svg?style=flat-square&logo=firebase](https://spring.io/)])
-![springboot]([[[https://img.shields.io/badge/Firebase-%23039BE5.svg?style=flat-square&logo=firebase](https://spring.io/projects/spring-boot)]])
+![JAVA](https://img.shields.io/badge/Firebase-%23039BE5.svg?style=flat-square&logo=firebase)
+![spring](https://img.shields.io/badge/Firebase-%23039BE5.svg?style=flat-square&logo=firebase)
+![springboot](https://img.shields.io/badge/Firebase-%23039BE5.svg?style=flat-square&logo=firebase)
 ![React](https://img.shields.io/badge/React-53C1DE?style=flat-square&logo=react&logoColor=white) 
-![MySQL]([https://img.shields.io/badge/Styled_Components-DB7C85?style=flat-square&logo=styled-components&logoColor=white](https://www.mysql.com/))
+![MySQL](https://img.shields.io/badge/Styled_Components-DB7C85?style=flat-square&logo=styled-components&logoColor=white)
 ![GitHub](https://img.shields.io/badge/Github-%23121011.svg?style=flat-square&logo=github&logoColor=white)
 
 
