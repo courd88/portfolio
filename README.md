@@ -82,33 +82,34 @@
 
 - 1240px , 800px 로 두가지 버젼으로 구현
 
-- @media (max-width: 800px) {
-  .containerWrap .realTitle{
-      font-size: 24px;
-      margin-right:0;
-      margin-top: 50px;
-      margin-bottom:21px;
-  }
+- @media (max-width: 1240px){
+    #main-page{
+        width: 100%;
+        margin-left:0%;
+    }
 
-  .wrapper {
-    width:90%;
-    /* border: 1px solid tomato; */
-  }
+    #main-koreaissue{
+        display: flex;
+        padding: 0 40px;
+        
+    }
 
-  .box1 {
-      grid-template-columns:1fr;
-  }
+    .main-koreaissue-li{
+        width: 48%;
+    }
+}
 
-  .tdBox {
-      width: 100%;
-      height: 300px;
-  }
+@media (max-width: 800px){
+    #main-koreaissue{
+        display: flex;
+        padding: 0 40px;
+        
+    }
 
-  .image {
-      width: 50%;
-      height: 250px;
-  }
-
+    .main-koreaissue-li{
+        width: 100%;
+    }
+}
   
 
 
