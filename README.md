@@ -114,7 +114,7 @@
   
 
 
-### **4. 슬라이드 애니메이션**
+### **5. 슬라이드 애니메이션**
 
 <img width="100%" alt="이메일 발신" src="https://user-images.githubusercontent.com/51189962/136146784-b8b42395-8a05-402a-b393-d0aa95580c7f.gif" />
 
