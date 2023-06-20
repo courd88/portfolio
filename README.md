@@ -42,12 +42,12 @@
 
 ## **🛠 기술 및 도구**
 
-![JAVA](https://img.shields.io/badge/Firebase-%23039BE5.svg?style=flat-square&logo=firebase)
-![spring](https://img.shields.io/badge/Firebase-%23039BE5.svg?style=flat-square&logo=firebase)
-![springboot]([[https://img.shields.io/badge/Firebase-%23039BE5.svg?style=flat-square&logo=firebase](https://spring.io/projects/spring-boot)](https://spring.io/projects/spring-boot))
-![React](https://img.shields.io/badge/React-53C1DE?style=flat-square&logo=react&logoColor=white) 
-![MySQL](https://www.mysql.com/)
-![GitHub](https://img.shields.io/badge/Github-%23121011.svg?style=flat-square&logo=github&logoColor=white)
+![JAVA]
+![spring]
+![springboot]
+![React]
+![MySQL]
+![GitHub]
 
 
 
