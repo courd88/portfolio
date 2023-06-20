@@ -34,7 +34,7 @@
 >
 > **주요 기능:** 게시글 사진 등록 , 
 >
-> **사용 기술:** JAVA , spring , spring boot , React , MySQL
+> **사용 기술:** JAVA , spring , spring boot , JavaScript , React , MySQL
 >
 > **문의:** teagyun@nate.com
 
@@ -42,12 +42,12 @@
 
 ## **🛠 기술 및 도구**
 
-![JavaScript](https://simpleicons.org/icons/javascript.svg)
-![spring]
-![springboot]
-![React]
-![MySQL]
-![GitHub]
+![JAVA](https://img.shields.io/badge/Java-007396?style=flat-square&logo=Java&logoColor=white)
+![JavaScript](https://img.shields.io/badge/Javascript-F7DF1E?style=flat-square&logo=Javascript&logoColor=black)
+![spring](https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=Spring&logoColor=white)
+![React](https://img.shields.io/badge/React-53C1DE?style=flat-square&logo=react&logoColor=white)
+![MySQL](https://img.shields.io/badge/Mysql-4479A1?style=flat-square&logo=Mysql&logoColor=white)
+![GitHub](https://img.shields.io/badge/Github-%23121011.svg?style=flat-square&logo=github&logoColor=white)
 
 
 
