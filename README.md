@@ -78,7 +78,7 @@
 
 ### **4. 반응형 웹**
 
-<img width="100%" alt="반응형" src="https://user-images.githubusercontent.com/51189962/136144110-0a5cb56e-1dcf-4bc8-b7d8-b93bbb100744.gif" />
+<img width="100%" alt="반응형" src="https://github.com/courd88/portfolio/assets/121409878/2d53d90b-cfce-4d2f-8eee-ad0818737476" />
 
 - 1240px , 800px 로 두가지 버젼으로 구현
 
