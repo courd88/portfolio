@@ -42,7 +42,7 @@
 
 ## **🛠 기술 및 도구**
 
-![JAVA]
+![JavaScript](https://simpleicons.org/icons/javascript.svg)
 ![spring]
 ![springboot]
 ![React]
