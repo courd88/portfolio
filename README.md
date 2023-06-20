@@ -6,7 +6,6 @@
 
 - 📝 [개요](#-포트폴리오-개요)
 - 🛠 [기술 및 도구](#-기술-및-도구)
-- 🔗 [링크](#-링크)
 - ✨ [업데이트](#-업데이트)
 - 👨🏻‍💻 [기능 구현](#-기능-구현)
   - [게시글 사진 등록](#1-게시글-사진-등록)
@@ -83,7 +82,7 @@
 
 <img width="100%" alt="반응형" src="https://user-images.githubusercontent.com/51189962/136144110-0a5cb56e-1dcf-4bc8-b7d8-b93bbb100744.gif" />
 
-
+- 1240px , 800px 로 두가지 버젼으로 구현
 
 - @media (max-width: 800px) {
   .containerWrap .realTitle{
@@ -112,14 +111,16 @@
       height: 250px;
   }
 
+  
+
 
 ### **4. 슬라이드 애니메이션**
 
 <img width="100%" alt="이메일 발신" src="https://user-images.githubusercontent.com/51189962/136146784-b8b42395-8a05-402a-b393-d0aa95580c7f.gif" />
 
 - [Frontend-](https://github.com/courd88/lastproject-front/blob/master/src/main/useScrollFadeIn.js) 를 이용한 애니메이션을 구현
-- [mainpage-](https://github.com/courd88/lastproject-front/blob/master/src/main/MainPage.js)
-- 화면이 스크롤 될 때 목록들이 슬라이드 형식으로 나타나는 애니메이션 구형
+- [mainpage-](https://github.com/courd88/lastproject-front/blob/master/src/main/MainPage.js) 화면이 스크롤 될 때 목록들이 슬라이드 형식으로 나타나는 애니메이션 구현-
+
 
 
 
