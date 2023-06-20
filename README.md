@@ -9,14 +9,12 @@
 - 🔗 [링크](#-링크)
 - ✨ [업데이트](#-업데이트)
 - 👨🏻‍💻 [기능 구현](#-기능-구현)
-  - [라이트/다크 모드](#1-라이트/다크-모드)
-  - [Hash Link](#2-Hash-Link)
-  - [반응형 웹](#3-반응형-웹)
-  - [Email 전송](#4-Email-전송)
-  - [Open graph](#5-Open-graph)
-  - [기타](#6-기타-기능)
-- 🚀 [배포](#-배포)
-- ⏰ [커밋 히스토리](#-커밋-히스토리)
+  - [게시글 사진 등록](#1-게시글-사진-등록)
+  - [좋아요 기능](#2-좋아요-기능)
+  - [페이징](#3-페이징-기능)
+  - [반응형 웹](#4-반응형-웹)
+  - [슬라이드 애니메이션](#5-슬라이드-애니메이션)
+- ⏰ [반성](#-반성)
 
 </b>
 
@@ -24,7 +22,7 @@
 
 
 
-> **프로젝트:** 한국관광 오는 외국인들의 정보공유 사이트 [KADA]
+> **프로젝트:** 외국인들의 한국관광 정보공유 사이트 [KADA]
 >
 > **기획 및 제작:** 김태균 외 5명
 >
@@ -32,9 +30,13 @@
 >
 > **제작 기간:** 2023.04 ~ 2023.06
 >
-> **주요 기능:** 게시글 사진 등록 , 
+> **주요 기능:** 게시글 사진 등록 , 좋아요 기능 , 페이징 , 반응형 웹 , 슬라이드 애니메이션
 >
 > **사용 기술:** JAVA , spring , spring boot , JavaScript , React , MySQL
+>
+> **Frontent:** https://github.com/courd88/lastproject-front.git
+>
+> **Backend:** https://github.com/courd88/LastProject-Back.git
 >
 > **문의:** teagyun@nate.com
 
@@ -56,115 +58,76 @@
 
 ## **👨🏻‍💻 기능 구현**
 
-### **1. 라이트/다크 모드**
+### **1. 게시글 사진 등록**
 
 <img width="100%" alt="라이트/다크모드" src="https://user-images.githubusercontent.com/51189962/136142455-dd9bbdf1-4676-408c-bdc2-009f133e92db.gif" />
 
-- 라이트 및 다크모드 기능 구현
-- 사용자의 시스템 모드에 맞게 theme이 설정되도록 구현
-- 사용자가 설정한 테마가 localStorage에 저장되어 한번 설정한 이후 같은 theme을 보여주도록 구현
+- 기본 게시판 글쓰기에 사진을 넣을 수 있게 구현
+- 사용자의 글수정에서도 사진을 변경 가능하도록 구현
+- 목록에서 사진과 글을 보일수 있도록 구현
 
-### **2. Hash Link**
+### **2. 좋아요 기능**
 
 <img width="100%" alt="hashlink" src="https://user-images.githubusercontent.com/51189962/136143186-aeb70c36-8e21-40e7-b937-deea0e66ad18.gif" />
 
-- Hash Link링크를 이용하여 네비게이션에서 메뉴 클릭시 해당 영역으로 스크롤되도록 구현
-- 해당하는 메뉴의 영역은 Full page.js와 유사하게 스타일링함
+- 글 목록에서도 글 상세보기에서도 좋아요를 누를수 있도록 구현
+- 게시판 인덱스와 좋아요 인덱스, 유저아이디를 외래키로 묶어서 구현 (추후 좀 더 나은 방법을 찾아보려 합니다)
 
-### **3. 반응형 웹**
+### **3. 페이징 기능**
+
+사진
+
+- 좋아요와 최신 게시글 순서를 정할수 있으며 페이징기능을 구현
+
+### **4. 반응형 웹**
 
 <img width="100%" alt="반응형" src="https://user-images.githubusercontent.com/51189962/136144110-0a5cb56e-1dcf-4bc8-b7d8-b93bbb100744.gif" />
 
-- 5개의 endpoint를 두고 반응형을 구현함
 
-```javascript
-// media.js
-const deviceSizes = {
-  desktop: '1440px',
-  laptop: '1280px',
-  tablet: '1024px',
-  mobile: '768px',
-  phone: '480px',
-};
 
-const media = {
-  desktop: `screen and (max-width: ${deviceSizes.desktop})`,
-  laptop: `screen and (max-width: ${deviceSizes.laptop})`,
-  tablet: `screen and (max-width: ${deviceSizes.tablet})`,
-  mobile: `screen and (max-width: ${deviceSizes.mobile})`,
-  phone: `screen and (max-width: ${deviceSizes.phone})`,
-};
+- @media (max-width: 800px) {
+  .containerWrap .realTitle{
+      font-size: 24px;
+      margin-right:0;
+      margin-top: 50px;
+      margin-bottom:21px;
+  }
 
-export { deviceSizes, media };
-```
+  .wrapper {
+    width:90%;
+    /* border: 1px solid tomato; */
+  }
 
-<img width="100%" alt="반응형 네비게이션" src="https://user-images.githubusercontent.com/51189962/136144313-2a67d258-3ec1-4517-80fc-3f67b957dff5.gif" />
+  .box1 {
+      grid-template-columns:1fr;
+  }
 
-- 네비게이션 메뉴의 경우 mobile(768px)을 기준으로 그 이상일 경우 상단바, 이하일 경우 햄버거메뉴로 변경
+  .tdBox {
+      width: 100%;
+      height: 300px;
+  }
 
-### **4. Email 전송**
+  .image {
+      width: 50%;
+      height: 250px;
+  }
+
+
+### **4. 슬라이드 애니메이션**
 
 <img width="100%" alt="이메일 발신" src="https://user-images.githubusercontent.com/51189962/136146784-b8b42395-8a05-402a-b393-d0aa95580c7f.gif" />
-<img width="100%" alt="이메일 수신" src="https://user-images.githubusercontent.com/51189962/136147118-ae829b7e-7ca5-4ef0-92e2-f7adc70ddb29.png" />
 
-- EmailJS를 이용하여 서버없이 메일 서비스를 이용할 수 있도록 구현
-- Sweetalert를 이용하여 커스텀 alert를 구현
-- https://emailjs.com
-- https://sweetalert2.github.io/
+- [Frontend-](https://github.com/courd88/lastproject-front/blob/master/src/main/useScrollFadeIn.js) 를 이용한 애니메이션을 구현
+- [mainpage-](https://github.com/courd88/lastproject-front/blob/master/src/main/MainPage.js)
+- 화면이 스크롤 될 때 목록들이 슬라이드 형식으로 나타나는 애니메이션 구형
 
-### **5. Open graph**
 
-<img width="100%" alt="스크린샷 2021-10-06 15 02 30" src="https://user-images.githubusercontent.com/51189962/136148865-7b6cfd30-ae66-410f-89fa-16f9ad883c74.png" />
 
-<img width="100%" alt="스크린샷 2021-10-06 15 03 15" src="https://user-images.githubusercontent.com/51189962/136148961-28e8c84b-b5fb-4052-9150-7c20e6af3cbc.png" />
 
-```html
-<!-- index.html -->
-<meta property="og:title" content="김태진 • Frontend Developer" />
-<meta property="og:description" content="프론트엔드 개발자 김태진입니다." />
-<meta property="og:image" content="%PUBLIC_URL%/thumb.png" />
-<meta property="og:url" content="https://keemtj.com/" />
-<meta property="og:type" content="website" />
-```
+## ⏰ 반성
 
-- meta tags를 통해 Facebook, twitter, linkedin, discord, kakao talk 등 링크를 전달 했을 때 링크에 대한 정보를 볼 수 있도록 구현
-- https://www.opengraph.xyz
+총 6명이서 두달동안 작업한 기간에 비해 볼륨이 부족하다는걸 알고 있습니다
 
-### **6. 기타 기능**
-
-- favicon.ico 생성
-- Fade-in transform
-- 프로젝트 페이지
-- React-responsive-carousel 커스텀
-
-## **🚀 배포**
-
-- 첫 배포
-
-```
-$ npm install -g firebase-tools
-$ firebase init
-$ firebase login
-  > HOSTING
-  > Directroy? build
-$ yarn build
-$ firebase deploy
-```
-
-- 수정 후 배포
-
-```
-$ yarn build
-$ firebase deploy
-```
-
-- 커스텀 도메인: Godaddy에서 커스텀 도매인 구매(https://keemtj.com)
-
-<br />
-
-## ⏰ 커밋 히스토리
-
-[내 커밋 히스토리 보러가기](https://github.com/keemtj/portfolio/commits?author=keemtj)
 <br/>
 <br/>
 <br/>
