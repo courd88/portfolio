@@ -19,7 +19,8 @@
 
 ## **📝 포트폴리오 개요**
 
-
+<img width="100%" alt="메인 페이지" src="https://github.com/courd88/portfolio/assets/121409878/c704147b-7ee1-43cc-9ea7-c6d0c6b2f74a" />
+(https://github.com/courd88/portfolio/assets/121409878/c704147b-7ee1-43cc-9ea7-c6d0c6b2f74a)
 
 > **프로젝트:** 외국인들의 한국관광 정보공유 사이트 [KADA]
 >
