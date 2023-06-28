@@ -59,7 +59,7 @@
 
 ### **1. 게시글 사진 등록**
 
-<img width="100%" alt="라이트/다크모드" src="https://github.com/courd88/portfolio/assets/121409878/3bc90b8b-7dc5-4a3d-9088-8bfc7017c6c9" />
+<img width="100%" alt="게시글사진등록" src="https://github.com/courd88/portfolio/assets/121409878/3bc90b8b-7dc5-4a3d-9088-8bfc7017c6c9" />
 
 - 기본 게시판 글쓰기에 사진을 넣을 수 있게 구현
 - 사용자의 글수정에서도 사진을 변경 가능하도록 구현
